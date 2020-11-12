@@ -1,0 +1,15 @@
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+      
+    steps:
+      - checkout
+      
+      - run:
+          print: Imprime la fecha actual
+          command: date
+          
+      - run:
+          print: Alvaro Bellmunt
+          command: puts "Alvaro Bellmunt"
